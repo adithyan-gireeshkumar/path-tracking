@@ -37,8 +37,7 @@ img{
     height: 100%;
     width: 100%;
     object-fit: cover;
-    border-radius: 3rem;
-    box-shadow: 0 0 2rem rgba(0,0,0,0.5);
+    
 }
 .hero , .outdro{
     position: relative;
@@ -70,14 +69,15 @@ img{
     justify-content: center;
     gap: 2rem;
 }
+
 .spotlight .row .col{
     flex: 1;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
-.spotlight .row :nth-child(1) .img,
-.spotlight .row :nth-child(4) .img{
+.spotlight > .row:first-child .img,
+.spotlight > .row:nth-last-child(2) .img{
     width: 50%;
 }
 .spotlight .card{
@@ -129,8 +129,8 @@ img{
         flex-direction: column;
         
     }
-    .spotlight .row :nth-child(1) .img,
-    .spotlight .row :nth-child(6) .img{
+    .spotlight > .row:first-child .img,
+    .spotlight > .row:nth-last-child(2) .img{
         width: 100%;
     }
     .spotlight .card{
